@@ -52,9 +52,9 @@ a=[]
 b=[]
 n1=input("Degree of polynomial 1 : ")
 n2=input("Degree of polynomial 2 : ")
-for i in range(0,int(n1)):
+for i in range(0,int(n1+1)):
 	a.append(random.randint(0,100))
-for i in range(0,int(n2)):	
+for i in range(0,int(n2+1)):	
 	b.append(random.randint(0,100))
 if(len(b)>=len(a)):
 	k=len(b)
