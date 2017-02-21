@@ -28,7 +28,7 @@ class Heap:
 class Matrix:
 	row=0
 	column=0
-	a=3
+	a=None
 	def __init__(self,r,c):
 		self.row=r
 		self.column=c
