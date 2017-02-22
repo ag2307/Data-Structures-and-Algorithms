@@ -26,9 +26,6 @@ class Heap:
 			self.length=self.length-1
 			self.maxHeapify(0)
 class Matrix:
-	row=0
-	column=0
-	a=None
 	def __init__(self,r,c):
 		self.row=r
 		self.column=c
@@ -45,7 +42,7 @@ class Matrix:
 		return (sum)
 
 	def __mul__(self,matrix):
-		if(self.column!=matrix.column):
+		if(self.column!=matrix.row):
 			print("Wrong matrix dimensions.\n")
 			return
 		product=Matrix(self.row,matrix.column)
